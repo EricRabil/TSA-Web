@@ -58,7 +58,9 @@ export default Vue.extend({
         const safetyButton = makeButton("Safety", false, "safety");
         safetyButton.routerLink = true;
         buttons.push(safetyButton);
-        buttons.push(makeButton("Contact"));
+        const contactButton = makeButton("Contact", false, "contact");
+        contactButton.routerLink = true;
+        buttons.push(contactButton);
         return buttons;
     }
   }

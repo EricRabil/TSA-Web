@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import { VueConstructor } from 'vue/types/vue';
+import Contact from '../components/Contact.vue';
 import Home from '../components/Home.vue';
 import Products from '../components/Products.vue';
 import Safety from '../components/Safety.vue';
@@ -39,6 +40,10 @@ export default new Router({
     {
       path: '/safety',
       component: Safety,
-    }
+    },
+    {
+      path: '/contact',
+      component: Contact,
+    },
   ].concat(computedRoutes),
 });
