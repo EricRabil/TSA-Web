@@ -11,6 +11,13 @@ module.exports = {
   },
   module: {
     rules: [
+      { test: /\.js$/, enforce: "post", exclude: /(node_modules)/, use: {
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env"],
+          plugins: ["transform-es2015-arrow-functions"]
+        }
+      }},
       { test: /\.(woff)$/, loader: 'url-loader?limit=100000' },
       {
         test: /\.vue$/,
@@ -55,8 +62,7 @@ module.exports = {
   },
   performance: {
     hints: false
-  },
-  devtool: '#eval-source-map'
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
