@@ -67,6 +67,12 @@ export default Vue.extend({
             form.reset();
             this.isShowingSuccessAlert = true;
         }
+    },
+    mounted() {
+        Array.from(document.getElementsByClassName("tsa-footer")).forEach(element => element.classList.add("tsa-footer-mixin-bottom"));
+    },
+    destroyed() {
+        Array.from(document.getElementsByClassName("tsa-footer-mixin-bottom")).forEach(element => element.classList.remove("tsa-footer-mixin-bottom"));
     }
 });
 </script>

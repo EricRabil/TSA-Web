@@ -26,7 +26,14 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend();
+export default Vue.extend({
+    mounted() {
+        Array.from(document.getElementsByClassName("tsa-footer")).forEach(element => element.classList.add("tsa-footer-mixin-bottom"));
+    },
+    destroyed() {
+        Array.from(document.getElementsByClassName("tsa-footer-mixin-bottom")).forEach(element => element.classList.remove("tsa-footer-mixin-bottom"));
+    }
+});
 </script>
 
 <style lang="scss">
