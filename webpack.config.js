@@ -19,7 +19,7 @@ module.exports = {
         loader: "babel-loader",
         options: {
           presets: ["@babel/preset-env"],
-          plugins: ["transform-es2015-arrow-functions"]
+          plugins: ["transform-es2015-template-literals", "transform-es2015-arrow-functions"]
         }
       }},
       { test: /\.(woff)$/, loader: 'url-loader?limit=100000' },
