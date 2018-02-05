@@ -1,6 +1,7 @@
 
 var path = require('path')
 var webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   entry: './src/index.ts',
@@ -9,6 +10,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   module: {
     rules: [
       { test: /\.js$/, enforce: "post", exclude: /(node_modules)/, use: {
