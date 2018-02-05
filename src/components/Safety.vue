@@ -6,7 +6,17 @@
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    This is the safety page with safety information!
+                    Our artifical intelligence deployments should never substitute human monitoring.
+                    These deployments are designed to assist in execution of operations and services, however are not 100% reliable and do need redundancies and safeguards.
+                    <br>
+                    By purchasing a product from <strong>Running Robot</strong>, you agree that you will not:
+                    <ul>
+                        <li>Solely rely on our technologies</li>
+                        <li>Use these technologies to carry out wrongdoings</li>
+                        <li>Attempt to use these technologies outside of their scope of operations</li>
+                    </ul>
+                    <br>
+                    Our products, while highly intelligent, are also highly specialized for their scope of operations. As a result, we ask that you do not attempt to use them outside of their scopes. While they may perform fine, they are not designed to work in other fields and may behave abnormally at first.
                 </p>
             </div>
         </div>
