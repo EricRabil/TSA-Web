@@ -70,14 +70,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.usage-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-    opacity: 0.8;
-}
-
 .testimonial-jumbotron {
     background-color: inherit;
     border-color: rgba(0,0,0,0.125);
