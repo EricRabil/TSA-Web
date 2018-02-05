@@ -71,7 +71,7 @@ export default Vue.extend({
                         body: usage.description,
                         button: {
                             text: "Learn more",
-                            type: "success",
+                            type: theme === "success" ? "primary" : "success",
                             link: usage.identifier,
                             router: true
                         },
