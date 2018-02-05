@@ -1,6 +1,6 @@
 <template>
     <div :class="this.itemData.classes.image">
-        <img class="d-block w-100" :src="this.imageURL" :alt="this.itemData.imageAlt">
+        <img :src="this.imageURL" :alt="this.itemData.imageAlt" height="558">
         <div v-if="!!this.itemData.text" class="carousel-caption">
             <h3>{{this.itemData.text.title}}</h3>
             <p v-if="!!this.itemData.text.caption">{{this.itemData.text.caption}}</p>
@@ -31,7 +31,7 @@ export default Vue.extend({
     top: 0;
     left: 0;
     min-width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .carousel-caption {
